@@ -1,0 +1,29 @@
+{
+  "name": "workers",
+  "version": "1.0.1",
+  "description": "Simple discord bot template using cloudflare workers",
+  "private": false,
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "wrangler dev src/server.js",
+    "slash": "node src/register.js",
+    "publish": "wrangler publish",
+    "tmole": "tmole 8787"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/builders": "^1.6.5",
+    "@discordjs/rest": "^0.5.0",
+    "colors": "^1.4.0",
+    "discord-api-types": "^0.34.0",
+    "discord-interactions": "^3.2.0",
+    "dotenv": "^10.0.0",
+    "itty-router": "^2.5.1",
+    "wait": "^0.4.2"
+  },
+  "devDependencies": {
+    "node-fetch": "^3.2.6"
+  }
+}
