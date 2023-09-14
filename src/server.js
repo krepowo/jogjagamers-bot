@@ -12,26 +12,8 @@ import { globalReq } from '../utils/request';
 
 const router = Router();
 
-/**
- * A thing
- */
-class JsonResponse extends Response {
-   constructor(body, init = {}) {
-      const jsonBody = JSON.stringify(body);
-      init = init || {
-         headers: {
-            'content-type': 'application/json;charset=UTF-8',
-         },
-      };
-      super(jsonBody, init);
-   }
-}
-
-/**
- * A simple :wave: hello page to verify the worker is working.
- */
 router.get('/', (request, env) => {
-   return new Response(`👋 ${env.DISCORD_APPLICATION_ID} use this endpoint to keep bot alive.`);
+   return new Response(`Halo bang`);
 });
 
 /**
@@ -41,7 +23,6 @@ router.get('/', (request, env) => {
  */
 router.post('/', async (request, env) => {
    try {
-      // console.log(request.query);
       const interaction = await request.json();
       if (interaction.type === InteractionType.Ping) {
          return new JsonResponse({
