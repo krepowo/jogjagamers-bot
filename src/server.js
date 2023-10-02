@@ -93,7 +93,7 @@ router.post('/', async (request, env) => {
                      },
                      {
                         "name": "Network",
-                        "value": `- **IP:Port:** 139.99.125.54:7777 / ${data.connect}\n- **Ping:** ${data.ping}ms *(from \`Singapore - sin1\`)*\n- **Server location:** 🇸🇬 Singapore`
+                        "value": `- **IP:Port:** 157.254.166.76:7777 / ${data.connect}\n- **Ping:** ${data.ping}ms *(from \`Singapore - sin1\`)*\n- **Server location:** 🇸🇬 Singapore`
                      }
                   ],
                   "color": 2250789,
@@ -119,7 +119,7 @@ router.post('/', async (request, env) => {
                   "icon_url": "https://cdn.discordapp.com/attachments/892336997488816131/1151115710496514118/jgicon.png",
                   "name": "Jogjagamers Discord Bot"
                },
-               "description": "**IP:Port:**\n\`139.99.125.54:7777\` / \`jg-rp.com:7777\`",
+               "description": "**IP:Port:**\n\`157.254.166.76:7777\` / \`jg-rp.com:7777\`",
                "color": 2250789,
                "footer": {
                   "text": "Last updated:"
